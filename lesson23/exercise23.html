@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		let keyWords = "kill|kiss|bumb|kamdjou|etienne|junior|brandon|kennedy|kwedi"
+
+		let text =  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, junior sed do eiusmod consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum bumb dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup kiss idatat non consequat. Duis aute irure dolor in reprehenderit in voluptate elit esse proident, sunt in culpa qui officia Etienne deserunt mollit anim id est laborum. tempor incididunt ut labore et dolore junior magna aliqua. Ut enim brandon ad kill minim kiss veniam, quis nostrud citation ullamco laboris nisi ut aliquip ex ea commodo cillum bumb dolore eu fugiat nulla ariatur.xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia Etienne deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis kwedi nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat kennedy nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia kamdjou deserunt mollit anim id est laborum.";
+
+		let regExp = new RegExp("\\b(" + keyWords + ")\\b", "gi");
+		console.log(text.replace(regExp, "*$1*"));
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

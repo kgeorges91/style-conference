@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// let date = new Date;
+	// console.log(date);
+	// let a = 5;
+	// let b = 6;
+	// let c = 7;
+
+	// let s = (a+b+c)/2;
+	// console.log(s);
+
+	// let A = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+	// console.log(A);
+
+	
+
+	// setInterval(() => {
+	// 	let str = "w3resources";
+	// 	let l = str.length - 1;
+	// 	// console.log(l);
+	// 	let e = str[l];
+	// 	str.splice(l,1);
+	// 	str.unshift(e);
+
+	// 	console.log(str);
+	// }, 1000);
+
+
+
+	// function leap (year){
+		
+	// 	if ( year%4 == 0 && year%100 == 0 && year%400 == 0 ) {
+
+	// 		console.log("This year is leap");
+	// 	}
+
+	// 	 else {
+	// 	 	console.log("this year is not leap");
+	// 	 }
+			
+		
+	// };
+	// 	leap(1980);
+
+	// let imagine = prompt("guess a number");
+	// let guessNumber = Math.floor(Math.random()* 11);
+
+	// if (guessNumber == imagine) {
+	// 	alert("Good work the number was"+ guessNumber );
+	// 	console.log(guessNumber);
+	// } else {
+	// 	alert("Not Matched the number was"+ guessNumber);
+	// 	console.log(guessNumber);
+	// }
+
+	// let string = "condition";
+	// 	if (string.length >= 3) {
+	// 		let str = string.substring(string.length - 3);
+	// 		str = str+string+str;
+	// 		console.log(str);
+	// 	} else {}
+
+	// 	function compare(first, second, third){
+
+	// 		if (first > second && first > third) {
+	// 			console.log(first);
+	// 		} else if (second > first && second > third){
+	// 			console.log(second);
+	// 		} else if (third > first && third > second) {
+	// 			console.log(third);
+	// 		}
+	// 	};
+
+	// 	compare(55,26,37);
+
+		// function compare (array) {
+		// 	let max = 0;
+		// 	array.map(x=> {if (x > max){
+		// 		max = x;
+		// 	}
+		// 	})
+		// 	console.log(max);
+		// };
+		// compare([500, 200, 150, 250, 800, 1200, 5000, 650, 89652, 12580]);
+		
+		
+		// function nearest(numbers){
+		// 	let n = 0; 
+		// 	for (var i = 0; i < numbers.length; i++) {
+		// 		let x = 100 - numbers[i];
+		// 		if (i == 0) {
+		// 			n = x;
+		// 		} if (i > 0) {
+		// 			if (x < n){
+		// 				n = x;
+		// 			}
+		// 		} 
+		// 	}
+		// 	console.log(100 - n);
+		// };
+		// nearest([1, 25, 98,102]);
+
+		// let str = "some 10 thi 12 l 6";
+		// let re = /\w+/g;
+		// let a = str.match(re);
+		// let shortest; 
+		// a.map((x, index)=> {if (index == 0) {
+		// 	shortest = x;
+		// }
+		// if (index > 0){
+		// 	if (x.length < shortest.length) {
+		// 		shortest = x;
+		// 	}
+		// }});
+		// console.log(shortest);
+
+		let persons = [
+		{name: 'KAMDJOU', age: 40, title: 'Full stack-developper'},
+		{name: 'NDAWA', age: 20, title: 'student'},
+		{name: 'KWEDI', age: 30, title: 'Financer'}
+		]
+		console.log(persons);
+
+		// let display = 'I am '+persons[0].name + ' age '+persons[0].age+' and my title is'+`${persons[0].title}`;
+			
+		// let display2 =	'I am '+persons[1].name + ' age '+persons[1].age+' and my title is '+ persons[1].title;
+		// let display3 = 	'I am '+persons[2].name + ' age '+persons[2].age+' and my title is '+persons[2].title;
+
+		
+		for (var i = 0; i < persons.length; i++) {
+			persons[i].color = "black"; 
+			console.log(persons);
+			};
+
+			function add(array) {
+				for (var i = 0; i < array.length; i++) {
+					let display;
+					display = `I am ${array[i].name} and i am : ${array[i].age} years old and my title is: ${array[i].title}`;
+				console.log(display);
+			};
+			}
+			function display(array){
+				for (var i = 0; i < array.length; i++) {
+					let display;
+					display = `I am ${array[i].name} and i am : ${array[i].age} years old and my title is: ${array[i].title} and my color is ${array[i].color}`;
+					console.log(display);
+			};
+			}
+		add(persons);
+		display(persons);
+		persons.push({name: 'kenedy', age: 25, title: 'trader'});
+		console.log(\n); 
+		console.log()
+
+</script>
+</body>
+</html>

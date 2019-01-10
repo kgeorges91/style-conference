@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+<!-- <a href="https: //google.com"> go to google</a>
+<a href="https: //facebook.com"> go to facebook</a>
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+<p style="border: 3px solid red">I'm boxe in</p> -->
+
+<p id="para" style="color: purple">Nice Text</p>
+<p style="text-align: center">
+	<img src="cat-grey.jpeg" style="position: relative">
+</p>
+
+<script type="text/javascript">
+	// let link = document.body.getElementByTagName('a')[1];
+	// console.log(link.href);
+
+	// let paragraphs = document.body.getElementByTagName('p');
+	// document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
+
+	// let p = document.createElement('p');
+	// let text = document.createTextNode(some text);
+	// let node = p.appendChild(text);
+	// document.documentElement.appendChild(node);
+	// console.log(p);
+
+	// let para = document.body.getElementByTagName('p')[3];
+	// console.log("clientHeight:", para.clientHeight);
+	// console.log("offsetHeight:", para.offsetHeight);
+	// let para = document.getElementById("para");
+	// console.log(para.style.color);
+	// para.style.color = "cyan";
+	let cat = document.querySelector("img");
+	let angle = Math.PI / 2;
+	function animate(time, lasTime) {
+		if (lasTime!= null) {
+			angle += (time - lasTime) * 0.001;
+		}
+		cat.style.top = (Math.sin(angle) * 80) + "px";
+		cat.style.left = (Math.cos(angle) * 200) + "px";
+		requestAnimationFrame(newTime => animate(newTime, time));
+
+	}
+	requestAnimationFrame(animate);
+
+</script>
+</body>
+</html>

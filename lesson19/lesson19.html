@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+	<script type="text/javascript">
+		// let listOfNumbers = [2, 3, 4 ,8, 11];
+		// console.log(listOfNumbers.length);
+
+		// let day1 = {
+		// 	squirrel : false,
+		// 	events : ["work", "touched tree", "pizza", "running"]
+		// };
+
+		// console.log(day1.squirrel);
+		// console.log(day1.wolf);
+		// day1.wolf = false;
+		// console.log(day1.wolf);
+		// console.log(day1.events[2]);
+		// delete listOfNumbers.events;
+		// console.log("events" in listOfNumbers);
+
+		let events = [
+		{
+			squirrel : false,
+			events : ["work", "touched tree", "pizza", "running"]},
+
+			{
+			squirrel : false,
+			events : ["work", "touched tree", "pizza"]},
+
+			{
+			squirrel : false,
+			events : ["work", "touched tree", "pizza", "running"]},
+			
+			{
+			squirrel : false,
+			events : ["work", "touched tree", "pizza", "running"]},
+
+			{
+			squirrel : false,
+			events : ["work", "pizza"]
+			},
+		];
+			for (let entry of events) {
+				console.log(`${entry.events.length} events.`); 
+			}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grade</title>
+	<script type="text/javascript">
+		let students = [{}];
+		function addEntry(name, marks) {
+			 // name = "";
+			 // marks = Number();
+			if (marks < 60) {
+				students.push(name, marks, "F");
+			} 
+			else if ((marks >= 60) && (marks < 70) ) {
+				students.push(name, marks, "D");
+			} 
+			else if ((marks >= 70) && (marks < 80)) {
+				students.push(name, marks, "C");
+			} 
+			else if ((marks >= 80) && (marks < 90)) {
+				students.push(name, marks, "B");
+			} 
+			else if ((marks >= 90) && (marks <= 100)) {
+				students.push(name, marks, "A");
+			} 
+		}
+		addEntry("David", 80);
+		// addEntry(["Vinoth"],77);
+		// addEntry(["Divya"], 88);
+		// addEntry(["Ishitha"], 95);
+		// addEntry(["Thomas"], 68)
+		console.log(students);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

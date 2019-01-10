@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button>Click me any way you want</button>
+	<p>This page turns to violet when you hold the V key.</p>
+	<style type="text/css">
+		body {
+			height: 200 px;
+			background: beige;
+		}
+		.dot {
+			height: 8px; width: 8px;
+			border-radius: 4px; 
+			background: blue;
+			position: absolute;
+		}
+	</style>
+	<script type="text/javascript">
+		// let button =document.querySelector("button");
+		// function once (){
+		// 	console.log("done");
+		// 	button.removeEventlistener("", once)
+		// }
+
+		// });
+		// let button = document.querySelector("button");
+		// button.addEventListener("mousedown", event => {
+		// 	if (event.button == 0) {
+		// 		console.log("left button");
+		// 	} else if (event.button == 1) {
+		// 		console.log("Middle button");
+		// 	} else if (event.button == 2) {
+		// 		console.log("right button");
+		// 	}
+		// });
+		// window.addEventListener("keydown", event => {
+		// 	if (event.key == "v") {
+		// 		document.body.style.background = "violet";
+		// 	}
+		// });
+		// window.addEventListener("keyup", event => {
+		// 	if (event.key == "v") {
+		// 		document.body.style.background = "";
+		// 	}
+		// });
+		window.addEventListener("click", event => {
+			let dot = document.createElement("div");
+			dot.className = "dot";
+			dot.style.left = (event.pageX - 4) + "px";
+			dot.style.top = (event.pageY - 4) + "px";
+			document.body.appendChild(dot);
+		})
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>balloon</title>
+</head>
+<body>
+
+	<p>click the arrow up or down button to increase or defleate the balloon</p>
+	
+	<script type="text/javascript">
+		let div = document.createElement("div");
+		let b = document.createTextNode("🎈");
+		let x = document.createTextNode("💥");
+		 div.appendChild(b, x);
+
+
+		div.className = "balloon", "xplode";
+		div.style.position = "relative";
+		div.style.top = "50px";
+		div.style.left = "50px";
+		div.style.fontSize = "20px";
+
+		document.body.appendChild(div);		
+		// let balloon = document.getElementsByTagName("strong");
+		// console.log(balloon);
+		let of = 40;
+		let coef = (of * 10)/100;
+			
+			document.addEventListener("keyup", balloon =>{
+			if (balloon.key == "ArrowUp") {
+				// document.body.style.fontSize += 10%
+				// event.preventDefault();
+				of += coef;
+				div.style.fontSize = of+"px";
+
+			}
+			});
+			document.addEventListener("keydown", balloon =>{
+			if (balloon.key == "ArrowDown") {
+				// document.body.style.fontSize -= 10%
+				// event.preventDefault();
+				of -= coef;
+				div.style.fontSize = of+"px";
+			}
+		});
+
+	</script>
+</body>
+</html>
